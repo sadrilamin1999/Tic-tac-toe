@@ -11,7 +11,7 @@ const Bord = () => {
   if (winner) {
     status = `Winner: ${winner}`;
   } else {
-    status = "Next Player" + (isXNext ? "X" : "O");
+    status = "Next Player" + " " + (isXNext ? "X" : "O");
   }
 
   const handleClick = (i) => {
@@ -29,7 +29,7 @@ const Bord = () => {
     setXIsNext(!isXNext);
   };
   return (
-    <div className=" bg-purple-700 p-12 rounded-xl flex flex-col items-center gap-5">
+    <div className=" bg-purple-700 w-[26rem] h-[22rem] rounded-xl flex flex-col justify-center items-center gap-5">
       <div>
         <h2 className=" text-rose-50 text-6xl">{status}</h2>
       </div>
